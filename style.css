@@ -7,10 +7,27 @@ body{
     font-weight: bold;
 }
 li{
-    font-family: fantasy;
+    font-family: sans-serif;
     text-align: center;
-}  
-
- li{
     text-align: inherit;
+}
+
+.list-style{
+    font: sbold;
+    font: italic;
  }
+.caixa{
+    color: rgb(6, 10, 47);
+    display: inline-block;
+    vertical-align: top;
+    line-height: 50pxS;
+    text-align: center;
+}
+
+.border{
+    border: 3px, solid, black;
+}
+
+#font{
+    font-family: sans-serif;
+}
