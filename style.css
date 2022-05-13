@@ -41,7 +41,7 @@ div{
 }
 
 li:hover{
-    background-color: rgb(41, 19, 151);
+    background-color: rgb(73, 216, 44);
 }
 
 li:active{
@@ -49,5 +49,9 @@ li:active{
 }
 
 ul.border{
-    background-color: blue;
+    background-color: rgb(74, 217, 52);
+}
+
+a:hover{
+    background-color: rgb(85, 220, 31);
 }
