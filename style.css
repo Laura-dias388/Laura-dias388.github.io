@@ -31,3 +31,23 @@ li{
 #font{
     font-family: sans-serif;
 }
+
+#linkedln{
+    font-family: sans-serif;
+}
+
+div{
+    font-family: monospace;
+}
+
+li:hover{
+    background-color: rgb(41, 19, 151);
+}
+
+li:active{
+    color: white;
+}
+
+ul.border{
+    background-color: blue;
+}
