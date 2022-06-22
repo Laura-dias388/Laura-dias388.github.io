@@ -40,18 +40,22 @@ div{
     font-family: monospace;
 }
 
-li:hover{
-    background-color: rgb(73, 216, 44);
+/*li:hover{
+    background-color: rgb(52, 67, 127);
 }
 
 li:active{
     color: white;
 }
 
-ul.border{
-    background-color: rgb(74, 217, 52);
+/*ul.border{
+    background-color: rgb(102, 100, 136);
 }
 
 a:hover{
-    background-color: rgb(85, 220, 31);
+    background-color: rgb(70, 87, 119);
+}
+
+h3{
+    background-color: none;
 }
