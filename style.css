@@ -1,82 +1,298 @@
-
-/* Gamer Style */
-
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #23282d;
-    color: #f5f5f5;
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
 
-  h1 {
-    font-family: monospace;
-    border-right: 2.5px solid green;
-    animation: cursor .5s infinite,
-      escrevendo 3.5s steps(25, end);
-      white-space: nowrap;
-      overflow: hidden;
-  }
+/* Header */
 
-  @keyframes cursor {
-    0% {
-      border-color: transparent;
-    }
-    50% {
-      border-color: green;
-    }
-  }
+.header-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #aad6d7;
+  background-image: url(./img/My_portifolio.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 0 112px;
+  position: relative;
+}
 
-  @keyframes escrevendo  {
-    from {
-      width: 0;
-    } to {
-      width: 100%;
-    }
-  }
-  
-  h3 {
-    font-size: 1.5em;
-    font-weight: 400;
-    letter-spacing: 2px;
-    margin: 0 0 16px 0;
-    text-transform: uppercase;
-  }
-  
-  img#imgl {
-    background-color: transparent;
-    border: 2px solid #154989;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-  }
+h1 {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
 
-  img#imgl {
-    background-image: linear-gradient(
-      red 10%,
-      blue 50%,
-    );
-  }
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
 
-  @keyframes efeito {
-    to {
-      image-rendering: 0 0 linear;
-    } from {
+.social-media {
+  margin-top: 1rem;
+  display: flex;
+}
 
-    }
-  }
-  
-  .caixa_border {
-    padding: 16px;
-    background-color: #040e31;
-    border: 2px solid #154989;
-    border-radius: 8px;
-  }
-  
-  a {
-    font-size: 1.2em;
-    font-weight: 400;
-    color: #00b5ad;
-    text-decoration: none;
-    letter-spacing: 1px;
-    margin-bottom: 16px;
-    background-color: #343435;
-  }
+.social-media a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem 4rem;
+  border: 1px solid black;
+  max-width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s ease-in-out;
+}
+
+a:hover {
+  background-color: #162020;
+  color: white;
+}
+
+/* Menu-hamburguer */
+
+.checkbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  transition: 400ms ease-in-out 0s;
+}
+
+.checkbox .trace {
+  width: 50px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  border-radius: 4px;
+  transition: 0.5s ease-in-out;
+}
+
+.checkbox .trace:nth-child(1) {
+  top: 20px;
+  transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2) {
+  top: 45px;
+  transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3) {
+  bottom: 65px;
+  transform: rotate(0);
+}
+
+#toggle {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  background-color: transparent;
+  height: 4px;
+  width: 10px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 0px white;
+  z-index: -1;
+  transition: 400ms ease-in-out 0s;
+}
+
+.menu-items {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: 400ms ease-in-out 0s;
+}
+
+.menu-items ul {
+  list-style-type: none;
+}
+
+.menu-items ul li a {
+  margin: 10px 0;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 40px;
+}
+
+/* Animaçao do menu */
+
+#toggle:checked + .checkbox .trace:nth-child(1) {
+  transform: rotate(45deg);
+  top: 49px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2) {
+  transform: translate(-100px);
+  width: 30px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 49px;
+}
+
+#toggle:checked + .checkbox {
+  background-color: white;
+}
+
+#toggle:checked ~ .menu {
+  box-shadow: 0px 0px 0px 100vmax white;
+  z-index: 1;
+}
+
+
+#toggle:checked ~ .menu-items {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Cards */
+
+.container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 3rem 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: 3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a2bee3;
+  background-image: url(./img/My_portifolio.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(0.5);
+  color: black;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+/* Sugestão do copilot */
+.card:hover {
+  filter: grayscale(0);
+  transform: scale(1.1);
+}
+
+.card-text {
+  width: 40%;
+  letter-spacing: 1px;
+  color: gray;
+}
+
+.card-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.card-wrapper::before {
+  content: '';
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: block;
+  border: 1px solid white;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.card-wrapper h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.card-wrapper p {
+  font-size: 0;
+  visibility: visible;
+  opacity: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover   {
+  filter: unset;
+}
+
+
+.card:hover > .card-wrapper::before {
+  height: 200px;
+  width: 200px;
+  opacity: 1;
+}
+
+.card:hover > .card-wrapper p {
+  opacity: 1;
+  visibility: visible;
+  font-size: 16px;
+}
+
+/*Footer */
+
+footer {
+  background-color:  #aad6d7;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  margin-top: 3rem;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<h3 id="hab" > <em>Minhas habilidades</em></h3>
+        
+    <div class="caixa_border" >
+        <li>Pontualidade</li>
+        <li>Organização</li>
+        <li>Obejetividade</li>
+        <li>Diciplina</li>
+        <li>Comunicação</li>
+            <li>Autonomia</li>
+            <li><strong>Criatividade</strong></li>
+        </div>
+        <div class="caixa border" >
+            <a href="#imgl">link para foto da Laura</a>
+            <p>
+                <a id="blog" href="https://www.youtube.com/watch?v=86YLFOog4GM" target="_blank" >Estação Espacial Ao Vivo</a>
+            </p>
+            <p>
+                <a id="hover" href="https://pt.quora.com/" target="_blank" >Quora - Site de perguntas e respostas</a>
+            </p>
+        </div>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

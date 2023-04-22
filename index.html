@@ -9,43 +9,121 @@
     <style></style> 
 </head>
 <body>
-    <h1> Lauricea Vital De Toledo Dias </h1>
-<!-- <header class="font
-" >
-    <li> <a href="#imgl"> Minha foto.</a></li>
-    <li> <a href="#desc"> Breve descrição sobre mim.</a></li>
-    <li> <a href="#hab"> Minhas Habilidades.</a></li>
-    <li> <a href="#blog"> Link de um blog que gosto muito.</a></li>
-</header> -->
-<img id="imgl" src="./IMG_20220407_020230_534.webp" width="200px" alt="Foto de Lauricea">
-<h3 id="desc" >Sou brasileira, da cidade de Itajubá sul de Minas Gerais.</h3>
-
-<h3 id="hab" > <em>Minhas habilidades</em></h3>
-
-<div class="caixa_border" >
-    <li>Pontualidade</li>
-    <li>Organização</li>
-    <li>Obejetividade</li>
-    <li>Diciplina</li>
-    <li>Comunicação</li>
-    <li>Autonomia</li>
-    <li><strong>Criatividade</strong></li>
-</div>
-<!-- <h3>Me orgulho muito da minha criatividade.</h3> -->
-<br>
-<a href="https://linkedin.com/in/lauricea-dias" target="_blank">Meu linkedln</a>
-<p>
-<a href="https://github.com/Laura-dias388" target="_blank">Meu GitHub</a>  
-
-</p>
-</div>
-<div class="caixa border" >
-<a href="#imgl">link para foto da Laura</a>
-<p>
-    <a id="blog" href="https://www.youtube.com/watch?v=86YLFOog4GM" target="_blank" >Estação Espacial Ao Vivo</a>
-</p>
-</p>
-<a id="hover" href="https://pt.quora.com/" target="_blank" >Quora - Site de perguntas e respostas</a>
-<script src="script.js"></script>
+    <header class="header-container">
+        <div class="header">
+            <div class="checkbox-container">
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="toggle"/>
+                    <label class="checkbox" for="toggle">
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                        <div class="trace"></div>
+                    </label>
+                </div>
+                <div class="menu"></div>
+                <nav class="menu-items">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#">Projetos</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <h1> Lauricea Vital De Toledo Dias </h1>
+        <h2> Desenvolvedora Full-Stack </h2>
+        <div class="social-media">
+            <a href="https://linkedin.com/in/lauricea-dias" target="_blank">Linkedln</a>
+            <a href="https://github.com/Laura-dias388" target="_blank">GitHub</a> 
+        </div>
+    </header>
+    <main class="container">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Sobre mim</h2>
+                    <p>Detalhes</p>
+                </div>
+            </div>
+            <div class="card-text">
+                <p>Trabalhei em diversos setores, desde fabricação de componentes eletrônicos 
+                para veículos até atendimento ao público, chegando ao cargo de gerência, 
+                onde pude desenvolver meus conhecimentos e habilidades, tais como: habilidade 
+                de falar com público (soft skills), conhecimento sobre contabilidade comercial, 
+                programação e manutenção de máquinas, entre outras;</p>
+                <p>Apaixonada por tecnologia, pretendo me especializar no desenvolvimento web com 
+                a Trybe, onde estudo várias stacks de tecnologia como: React, NodeJs, Docker, 
+                Jest entre outras, evoluindo sempre, buscando novas tecnologias e conhecimentos 
+                na área, pretendo chegar ao desenvolvimento de jogos que almejo há muito tempo.</p>
+            </div>
+        </div>
+    </main>
+    <main class="container">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Meus Projetos</h2>
+                    <p>Confira!!</p>
+                </div>
+            </div>
+            <div class="card-text">
+                <h3>Trybe Futebol Clube</h3>
+                <p>Projeto desenvolvido em back-end, utilizando o MySQL, Sequelize, TypeScript 
+                e POO durante o curso de desenvolvimento web na <a href="https://www.betrybe.com/" target="_blank">Trybe</a>.</p>
+                <div class="social-media">
+                    <a href="https://github.com/Laura-dias388/Trybe_Futebol_Clube" target="_blank">Project TFC</a> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="container">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Meus Projetos</h2>
+                    <p>Confira!!</p>
+                </div>
+            </div>
+            <div class="card-text">
+                <h3>Delivery App</h3>
+                    <p>Nesse projeto desenvolvemos em grupo um aplicativo de delivery, onde aplicamos 
+                    códigos em React, desenvolvemos nossas softsklills, e aplicamos o conhecimento 
+                    adquirido no módulo de front-end durante o curso de desenvolvimento web na
+                    <a href="https://www.betrybe.com/" target="_blank">Trybe</a>.</p>
+                <div class="social-media">
+                    <a href="https://github.com/Laura-dias388/Recipes_App" target="_blank">Project Delivery App</a> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="container">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-wrapper">
+                    <h2>Meus Projetos</h2>
+                    <p>Confira!!</p>
+                </div>
+            </div>
+            <div class="card-text">
+                <h3>TrybeSmith</h3>
+                    <p>Nesse projeto pude desenvolver minhas habilidades com Node.js, 
+                    Docker e TypeScript, no módulo de back-end durante o curso de desenvolvimento web na
+                    <a href="https://www.betrybe.com/" target="_blank">Trybe</a>.</p>
+                <div class="social-media">
+                    <a href="https://github.com/Laura-dias388/Projeto-TrybeSmith" target="_blank">Project Trybesmith</a> 
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer" >
+        <p>@writen by L. Dias</p>
+    </footer>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
